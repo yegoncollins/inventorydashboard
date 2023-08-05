@@ -1,8 +1,14 @@
 import React from 'react'
+import { Image } from 'antd'
+import logo from "./assets/logo,png"
+
 
 const header = () => {
   return (
-    <div className='Header'>header</div>
+    <div className='Header'>
+      <Image width={40} src={logo}>
+      </Image>
+    </div>
   )
 }
 
