@@ -1,15 +1,15 @@
 import {Space} from "antd";
 import './App.css';
-import Header from "./components/Header/header";
-import Footer from "./components/Footer/footer";
-import SideMenu from "./components/SideMenu/sidemenu";
-import PageContent from "./components/PageContent/pagecontent";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import SideMenu from "./components/SideMenu/SideMenu";
+import PageContent from "./components/PageContent/PageContent";
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Space>
+      <Space className="SideMenuandPageContent">
         <SideMenu/>
         <PageContent/>
       </Space>

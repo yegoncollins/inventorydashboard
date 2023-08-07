@@ -1,15 +1,23 @@
 import React from 'react'
-import { Image } from 'antd'
-import logo from "./assets/logo,png"
+import {BellFilled, MailOutlined} from "@ant-design/icons"
+import {Badge, Space, Typography } from 'antd'
 
 
-const header = () => {
+
+const Header = () => {
   return (
     <div className='Header'>
-      <Image width={40} src={logo}>
-      </Image>
+      <Typography.Title> Inventory Dashboard</Typography.Title>
+      <Space>
+        <Badge count={10} dot>
+        <MailOutlined style={{fontSize: 24}} />
+        </Badge>
+        <Badge count={20}>
+        <BellFilled style={{fontSize: 24}} />
+        </Badge>
+      </Space>
     </div>
   )
 }
 
-export default header
+export default Header

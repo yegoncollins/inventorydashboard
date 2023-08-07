@@ -1,9 +1,12 @@
 import React from 'react'
+import AppRoutes from "../AppRoutes/AppRoutes"
 
-const pagecontentcontent = () => {
+const PageContent = () => {
   return (
-    <div className='PageContent'>content</div>
+    <div>
+      <AppRoutes/>
+    </div>
   )
 }
 
-export default pagecontentcontent
+export default PageContent
